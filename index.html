@@ -1,1 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>El Patio Cordobés</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
 
+<header class="hero">
+  <div class="hero-text">
+    <h1>El Patio Cordobés</h1>
+    <p>Tradición, fuego y buen vino</p>
+    <a href="#reservas" class="btn">Reservar mesa</a>
+  </div>
+</header>
+
+<section class="platos">
+  <h2>Platos típicos</h2>
+
+  <div class="galeria">
+    <div class="plato">
+      <img src="https://images.unsplash.com/photo-1601050690597-df0568f70950" alt="Empanadas">
+      <h3>Empanadas Cordobesas</h3>
+    </div>
+
+    <div class="plato">
+      <img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1" alt="Choripán">
+      <h3>Choripán</h3>
+    </div>
+
+    <div class="plato">
+      <img src="https://images.unsplash.com/photo-1625944525533-473f9d29d7b0" alt="Locro">
+      <h3>Locro Criollo</h3>
+    </div>
+  </div>
+</section>
+
+<section class="reservas" id="reservas">
+  <h2>Reservas</h2>
+
+  <form id="formReserva">
+    <input type="text" placeholder="Nombre" required>
+    <input type="date" required>
+    <input type="time" required>
+    <input type="number" placeholder="Cantidad de personas" required>
+    <button type="submit">Confirmar reserva</button>
+  </form>
+
+  <p id="mensaje"></p>
+</section>
+
+<footer>
+  <p>📍 Córdoba, Argentina · 📞 351 123 4567</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
