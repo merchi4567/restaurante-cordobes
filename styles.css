@@ -1,1 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Roboto&display=swap');
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f4efe9;
+  color: #3b2f2f;
+}
+
+/* HERO */
+.hero {
+  background-image: url("https://images.unsplash.com/photo-1529692236671-f1f6cf9683ba");
+  background-size: cover;
+  background-position: center;
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-text {
+  background: rgba(0,0,0,0.6);
+  color: white;
+  padding: 30px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.hero h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 3rem;
+}
+
+.hero p {
+  margin: 15px 0;
+  font-size: 1.2rem;
+}
+
+.btn {
+  display: inline-block;
+  background: #8b0000;
+  color: white;
+  padding: 12px 25px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* PLATOS */
+.platos {
+  padding: 60px 20px;
+}
+
+.platos h2 {
+  text-align: center;
+  font-size: 2.2rem;
+  margin-bottom: 40px;
+}
+
+.galeria {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.plato {
+  background: white;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+  transition: transform 0.3s;
+}
+
+.plato:hover {
+  transform: translateY(-5px);
+}
+
+.plato img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.plato h3 {
+  padding: 15px;
+  text-align: center;
+}
+
+/* RESERVAS */
+.reservas {
+  background: #e6d3b1;
+  padding: 60px 20px;
+}
+
+.reservas form {
+  max-width: 400px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+input, button {
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+}
+
+button {
+  background: #8b0000;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+#mensaje {
+  text-align: center;
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+/* FOOTER */
+footer {
+  background: #3b2f2f;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+  .hero h1 {
+    font-size: 2.2rem;
+  }
+}
